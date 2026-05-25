@@ -6,6 +6,8 @@ env:
     BUILD_DIR: ${{ github.workspace }}
     XCODE_BUILD_PATH: DerivedData/Build/Products/Debug
     APP_NAME: AltTab
+permissions:
+    contents: write
 jobs:
     build:
         runs-on: macos-26
