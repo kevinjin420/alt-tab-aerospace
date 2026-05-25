@@ -2,6 +2,7 @@ name: Release
 on:
     push:
         branches: [main]
+    workflow_dispatch:
 env:
     BUILD_DIR: ${{ github.workspace }}
     XCODE_BUILD_PATH: DerivedData/Build/Products/Debug
